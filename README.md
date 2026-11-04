@@ -13,8 +13,6 @@ Per ricevere gli aggiornamenti in automatico usa [Obtainium](https://github.com/
 Ogni APK è firmato con la stessa chiave. Impronta SHA-256 del certificato:
 `45:ed:fc:20:26:6a:ec:d2:31:03:ec:c0:a1:62:db:ab:52:b7:d1:52:9b:1a:40:d0:09:09:b5:e6:9e:81:12:31`
 
-> Questo repository contiene solo gli APK. Il codice sorgente è in un repository privato: i link alla documentazione qui sotto funzionano solo per chi vi ha accesso.
-
 ---
 
 ## Cosa fa
@@ -101,5 +99,3 @@ Le foto sono elencate nell'intestazione, non inserite nel testo.
 - Android 10 (API 29) o successivo, ARM64 consigliato (supportati anche armeabi-v7a e x86_64 per l'emulatore).
 - Per Small servono circa 700 MB liberi durante l'installazione (download del modello completo e ottimizzazione sul telefono) e 138 MB dopo.
 - Distribuzione come **APK firmato**, non tramite Play Store.
-
----
