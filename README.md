@@ -1,3 +1,5 @@
+<p align="center"><img src="logo.svg" width="128" alt="Logo di PrendiNota"></p>
+
 # PrendiNota
 
 App Android per **registrare riunioni, trascriverle sul telefono e salvare le note su un cloud privato** (Nextcloud o WebDAV).
