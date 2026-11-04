@@ -6,7 +6,7 @@ L'audio **non lascia mai il telefono**: la trascrizione avviene sul dispositivo 
 
 ## Installazione
 
-Scarica `PrendiNota-*.apk` dall'[ultima release](https://github.com/SereSol/PrendiNota-releases/releases/latest) e aprilo sul telefono (Android chiede di consentire l'installazione da quella app).
+Scarica il file `.apk` dall'[ultima release](https://github.com/SereSol/PrendiNota-releases/releases/latest) e aprilo sul telefono (Android chiede di consentire l'installazione da quella app).
 
 Per ricevere gli aggiornamenti in automatico usa [Obtainium](https://github.com/ImranR98/Obtainium): «Aggiungi app» → incolla `https://github.com/SereSol/PrendiNota-releases`.
 
