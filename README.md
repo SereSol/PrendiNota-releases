@@ -4,7 +4,7 @@
 
 App Android per **registrare riunioni, trascriverle sul telefono e salvare le note su un cloud privato** (Nextcloud o WebDAV).
 
-L'audio **non lascia mai il telefono**: la trascrizione avviene sul dispositivo con [whisper.cpp](https://github.com/ggml-org/whisper.cpp), e sul cloud vanno solo la nota in Markdown e le foto ridotte. Niente account, niente server centrale, niente telemetria.
+L'audio **resta sul telefono**: la trascrizione avviene sul dispositivo con [whisper.cpp](https://github.com/ggml-org/whisper.cpp), e sul cloud vanno solo la nota in Markdown e le foto ridotte. L'audio esce solo se sei tu a condividerlo. Niente account, niente server centrale, niente telemetria.
 
 ## Installazione
 
@@ -79,7 +79,7 @@ Le foto sono elencate nell'intestazione, non inserite nel testo.
 - Elenco cronologico con stato di trascrizione e di caricamento.
 - Dettaglio con player (si salta al punto toccando un paragrafo), nota, griglia delle foto e anteprima di `note.md`.
 - Rinomina, duplica, elimina. L'eliminazione cancella anche foto e copie condivise.
-- **Condivisione** con le app Android (email, chat, …) di `note.md` e delle foto ridotte, mai degli originali.
+- **Condivisione** con le app Android (email, chat, …) di `note.md` e delle foto ridotte, mai degli originali. A ogni condivisione si sceglie se mandare **anche l'audio** (file `.opus`, con il peso indicato); l'audio si può condividere anche prima che la trascrizione sia finita.
 
 ---
 
@@ -87,7 +87,7 @@ Le foto sono elencate nell'intestazione, non inserite nel testo.
 
 | Dato | Dove va |
 |---|---|
-| Audio | Solo sul telefono, mai caricato |
+| Audio | Sul telefono, mai caricato sul cloud. Esce solo se lo condividi tu, scegliendolo ogni volta |
 | Trascrizione | Fatta sul telefono, poi sul tuo cloud come `note.md` |
 | Foto originali | Solo sul telefono |
 | Foto ridotte (senza GPS) | Sul tuo cloud e nelle condivisioni |
