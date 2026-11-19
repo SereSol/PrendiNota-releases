@@ -70,7 +70,7 @@ Le foto sono elencate nell'intestazione, non inserite nel testo.
 - **Nextcloud**: accesso dal browser con il proprio login, anche con SSO aziendale. Nextcloud crea una password dedicata a PrendiNota, che si può revocare in qualsiasi momento. L'app non vede mai la password dell'utente.
 - **WebDAV generico**: indirizzo, utente e password.
 - Più profili, ognuno con un nome a scelta (es. «lavoro», «famiglia»), attivabili e disattivabili; uno è il predefinito.
-- Al termine della trascrizione l'app crea sul cloud una cartella `data_titolo` e carica quello che il profilo prevede. Nella scheda del profilo, **Cosa caricare** ha tre interruttori: nota e foto ridotte accese, audio spento di serie. L'audio acceso si carica una volta sola, con il nome che la nota riporta in `audio_file`. Il cambio vale per i caricamenti successivi.
+- Al termine della trascrizione l'app crea sul cloud una cartella `data_titolo` e carica quello che il profilo prevede. Nella scheda del profilo, **Cosa caricare** ha tre interruttori: nota e foto ridotte accese, audio spento di serie. L'audio acceso si carica una volta sola; con **Converti in M4A** si carica in M4A invece che in Opus, e la nota sul cloud riporta in `audio_file` il nome del file caricato. Il cambio vale per i caricamenti successivi.
 - Le foto aggiunte dopo vengono caricate da sole, e nella nota remota si aggiorna solo l'elenco delle foto.
 - **Conflitti**: se la nota è stata modificata sul cloud, l'app non la sovrascrive. Avvisa e lascia scegliere se tenere la versione del telefono o scaricare quella del cloud. In quel caso le modifiche fatte sul cloud restano, e l'elenco delle foto viene aggiornato.
 - **Cambia cloud**: dalla scheda di una registrazione si può caricarla su un altro cloud, per esempio se il precedente non funziona più.
@@ -80,7 +80,7 @@ Le foto sono elencate nell'intestazione, non inserite nel testo.
 - Elenco cronologico con stato di trascrizione e di caricamento.
 - Dettaglio con player (si salta al punto toccando un paragrafo), nota, griglia delle foto e anteprima di `note.md`.
 - Rinomina, duplica, elimina. L'eliminazione cancella anche foto e copie condivise.
-- **Condivisione** con le app Android (email, chat, …) di `note.md` e delle foto ridotte, mai degli originali. A ogni condivisione si sceglie cosa mandare tra **nota, foto e audio** (file `.opus`, con il peso indicato); l'audio si può condividere anche prima che la trascrizione sia finita.
+- **Condivisione** con le app Android (email, chat, …) di `note.md` e delle foto ridotte, mai degli originali. A ogni condivisione si sceglie cosa mandare tra **nota, foto e audio** (l'audio convertito in `.m4a` sul telefono, di serie, oppure il file `.opus` originale, con il peso indicato); l'audio si può condividere anche prima che la trascrizione sia finita.
 
 ---
 
