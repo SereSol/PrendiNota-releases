@@ -4,7 +4,7 @@
 
 App Android per **registrare riunioni, trascriverle sul telefono e salvare le note su un cloud privato** (Nextcloud o WebDAV).
 
-L'audio **resta sul telefono**: la trascrizione avviene sul dispositivo con [whisper.cpp](https://github.com/ggml-org/whisper.cpp), e sul cloud vanno solo la nota in Markdown e le foto ridotte. L'audio esce solo se sei tu a condividerlo. Niente account, niente server centrale, niente telemetria.
+L'audio **resta sul telefono**: la trascrizione avviene sul dispositivo con [whisper.cpp](https://github.com/ggml-org/whisper.cpp), e sul cloud vanno di serie la nota in Markdown e le foto ridotte. L'audio esce solo se lo scegli tu: in una condivisione, o accendendolo in un profilo cloud. Niente account, niente server centrale, niente telemetria.
 
 ## Installazione
 
@@ -69,7 +69,7 @@ Le foto sono elencate nell'intestazione, non inserite nel testo.
 - **Nextcloud**: accesso dal browser con il proprio login, anche con SSO aziendale. Nextcloud crea una password dedicata a PrendiNota, che si può revocare in qualsiasi momento. L'app non vede mai la password dell'utente.
 - **WebDAV generico**: indirizzo, utente e password.
 - Più profili, ognuno con un nome a scelta (es. «lavoro», «famiglia»), attivabili e disattivabili; uno è il predefinito.
-- Al termine della trascrizione l'app crea sul cloud una cartella `data_titolo` e carica la nota e le foto ridotte.
+- Al termine della trascrizione l'app crea sul cloud una cartella `data_titolo` e carica quello che il profilo prevede. Nella scheda del profilo, **Cosa caricare** ha tre interruttori: nota e foto ridotte accese, audio spento di serie. L'audio acceso si carica una volta sola, con il nome che la nota riporta in `audio_file`. Il cambio vale per i caricamenti successivi.
 - Le foto aggiunte dopo vengono caricate da sole, e nella nota remota si aggiorna solo l'elenco delle foto.
 - **Conflitti**: se la nota è stata modificata sul cloud, l'app non la sovrascrive. Avvisa e lascia scegliere se tenere la versione del telefono o scaricare quella del cloud. In quel caso le modifiche fatte sul cloud restano, e l'elenco delle foto viene aggiornato.
 - **Cambia cloud**: dalla scheda di una registrazione si può caricarla su un altro cloud, per esempio se il precedente non funziona più.
@@ -79,7 +79,7 @@ Le foto sono elencate nell'intestazione, non inserite nel testo.
 - Elenco cronologico con stato di trascrizione e di caricamento.
 - Dettaglio con player (si salta al punto toccando un paragrafo), nota, griglia delle foto e anteprima di `note.md`.
 - Rinomina, duplica, elimina. L'eliminazione cancella anche foto e copie condivise.
-- **Condivisione** con le app Android (email, chat, …) di `note.md` e delle foto ridotte, mai degli originali. A ogni condivisione si sceglie se mandare **anche l'audio** (file `.opus`, con il peso indicato); l'audio si può condividere anche prima che la trascrizione sia finita.
+- **Condivisione** con le app Android (email, chat, …) di `note.md` e delle foto ridotte, mai degli originali. A ogni condivisione si sceglie cosa mandare tra **nota, foto e audio** (file `.opus`, con il peso indicato); l'audio si può condividere anche prima che la trascrizione sia finita.
 
 ---
 
@@ -87,7 +87,7 @@ Le foto sono elencate nell'intestazione, non inserite nel testo.
 
 | Dato | Dove va |
 |---|---|
-| Audio | Sul telefono, mai caricato sul cloud. Esce solo se lo condividi tu, scegliendolo ogni volta |
+| Audio | Sul telefono. Va sul cloud solo se lo accendi nel profilo («Cosa caricare», spento di serie); esce in condivisione solo se lo scegli quella volta |
 | Trascrizione | Fatta sul telefono, poi sul tuo cloud come `note.md` |
 | Foto originali | Solo sul telefono |
 | Foto ridotte (senza GPS) | Sul tuo cloud e nelle condivisioni |
