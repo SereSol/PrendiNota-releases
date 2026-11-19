@@ -4,7 +4,7 @@
 
 App Android per **registrare riunioni, trascriverle sul telefono e salvare le note su un cloud privato** (Nextcloud o WebDAV).
 
-L'audio **resta sul telefono**: la trascrizione avviene sul dispositivo con [whisper.cpp](https://github.com/ggml-org/whisper.cpp), e sul cloud vanno di serie la nota in Markdown e le foto ridotte. L'audio esce solo se lo scegli tu: in una condivisione, o accendendolo in un profilo cloud. Niente account, niente server centrale, niente telemetria.
+L'audio **resta sul telefono**: la trascrizione avviene sul dispositivo con [whisper.cpp](https://github.com/ggml-org/whisper.cpp) (Whisper o Parakeet), e sul cloud vanno di serie la nota in Markdown e le foto ridotte. L'audio esce solo se lo scegli tu: in una condivisione, o accendendolo in un profilo cloud. Niente account, niente server centrale, niente telemetria.
 
 ## Installazione
 
@@ -26,13 +26,14 @@ Ogni APK è firmato con la stessa chiave. Impronta SHA-256 del certificato:
 
 ### Trascrizione sul telefono
 - whisper.cpp integrato nell'app, senza connessione: l'audio non viene inviato a nessun servizio.
-- Rilevamento automatico della lingua, oppure **«Forza italiano»**.
-- Due modelli tra cui scegliere, scaricati una volta dal repository ufficiale di whisper.cpp e verificati con SHA-256:
+- Rilevamento automatico della lingua, oppure **«Forza italiano»** (solo con i modelli Whisper).
+- Tre modelli tra cui scegliere, scaricati una volta da Hugging Face (repository ufficiali di whisper.cpp e di ggml-org) e verificati con SHA-256:
 
   | Modello | Spazio | Uso |
   |---|---|---|
   | **Small** (q4_0, quantizzato sul telefono) | 138 MB | Consigliato: errori di trascrizione intorno al 10 % sull'italiano, circa metà del tempo dell'audio su un telefono recente |
   | **Base** (q5_1) | 56 MB | Più leggero e veloce, ma con circa il doppio degli errori. Per telefoni lenti o con poca memoria |
+  | **Parakeet** (TDT 0.6B v3 di NVIDIA, q4_0) | 339 MB | Il modello di [Meetily](https://github.com/Zackriya-Solutions/meetily). Circa un terzo degli errori di Small e più veloce, con punteggiatura e maiuscole. Riconosce da solo la lingua tra 25 lingue europee (niente «Forza italiano»). Usa circa 150 MB di memoria in più di Small. Licenza CC-BY 4.0 |
 
 - Coda in background: si può chiudere l'app. La trascrizione riprende da dove era arrivata anche dopo un riavvio del telefono.
 - Notifica con percentuale e minuti elaborati; si può annullare e riprendere.
