@@ -80,7 +80,7 @@ Le foto sono elencate nell'intestazione, non inserite nel testo.
 - Elenco cronologico con stato di trascrizione e di caricamento.
 - Dettaglio con player (si salta al punto toccando un paragrafo), nota, griglia delle foto e anteprima di `note.md`.
 - Rinomina, duplica, elimina. L'eliminazione cancella anche foto e copie condivise.
-- **Condivisione** con le app Android (email, chat, …) di `note.md` e delle foto ridotte, mai degli originali. A ogni condivisione si sceglie cosa mandare tra **nota, foto e audio** (l'audio convertito in `.m4a` sul telefono, di serie, oppure il file `.opus` originale, con il peso indicato); l'audio si può condividere anche prima che la trascrizione sia finita.
+- **Condivisione** con le app Android (email, chat, …) di `note.md` e delle foto ridotte, mai degli originali. A ogni condivisione si sceglie cosa mandare tra **nota, foto e audio** (l'audio convertito in `.m4a` sul telefono, di serie, oppure il file `.opus` originale, con il peso indicato). La conversione mostra percentuale e tempo che manca e continua anche ad app chiusa: a fine lavoro la notifica «Audio M4A pronto» apre la scelta dell'app. L'M4A resta pronto 7 giorni, così ricondividere è immediato; l'audio si può condividere anche prima che la trascrizione sia finita.
 
 ---
 
